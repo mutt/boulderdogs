@@ -1,0 +1,108 @@
+
+
+Bishop
+Happy Boulders
+Access: 5-10 min
+From the carpark find the obvious trail leading up the slope.
+Parking: 37.413621,-118.447618
+Crag: 37.416314,-118.449367
+
+Routes
+Hulk
+V6
+5 Stars
+Overhung
+Discription: 
+Sit start on an obvious break, move up to a big pocket then powerfully move left to the overhanging bulge and up.
+
+Image: Yes
+Bata: Toe hook the big pocket and cross right over with your right.
+
+
+Serangetti
+V5
+4 stars
+Face
+Disc: start on the left fin and move up through underclings out right to a powerful snatch. then up a trickier topout than it looks.
+
+Image: Yes
+Bata: from the big underclings go with your left hand to the huako.
+
+Yosamite
+Camp 4 boulders
+Access: 2 min
+Walk past the Camp 4 checkin hut keeping the camp to your left and you'll see a huge boulder. 
+Parking: 37.742171,-119.601489
+Crag: 37.741978,-119.602565
+
+Routes
+Midnight Lightning
+V8
+5 stars
+Overhung
+Discrition:
+Start on small edges, move up to a tricky balance move then out to the super hard mantle.
+
+Image: Yes
+Bata: Twist your wrist inwards on the mantle.
+
+Yosamite
+
+
+
+int routeName;
+int routeGrade;
+int routeStyle;
+int routeStars;
+int routeDiscription;
+image?
+int routeBata;
+tick box button
+
+instance variable in .h file
+
+{ 
+IBOutlet UILabel *nameLable;
+int routeGrade;
+}
+
+-(IBAction)clickedButton:(id)sender;
+
+
+in the .m file
+
+nameLable.text = @"routeGrade";
+// score is the route grade in V scale.
+score = 10;
+gradeLable.text = [NSString stringWithFormat:@"V%i",score];
+
+
+    Problems *pic =[[Problems alloc] init];
+    [pic setProblemName:@"The Hulk"];
+    [pic setProblemGrade:@"5"];
+    [pic setProblemDiscription:@"Sit start on the large edge, move up to the big pocket then left to a hard move and over the lip."];
+    [pic setProblemImage:@"theHulk.png"];
+    [pic setProblemStlye:@"2"];
+    [pic setProblemStars:@"4"];
+    [pic setProblemTicked:@"FALSE"];
+    [problems addObject:pic];
+	
+    Problems *pic =[[Problems alloc] init];
+    [pic setProblemName:@"Serangetti"];
+    [pic setProblemGrade:@"5"];
+    [pic setProblemDiscription:@"Start on the large flake. Move up into the underclings then right through some hard moves and up past a large 'shield' then a tricky topout."];
+    [pic setProblemImage:@"Serangetti.png"];
+    [pic setProblemStlye:@"3"];
+    [pic setProblemStars:@"3"];
+    [pic setProblemTicked:@"TRUE"];
+    [problems addObject:pic];
+	
+    Problems *pic =[[Problems alloc] init];
+    [pic setProblemName:@"Atari"];
+    [pic setProblemGrade:@"6"];
+    [pic setProblemDiscription:@"Stand start holding both edges, compress up the leaning prow."];
+    [pic setProblemImage:@"atari.png"];
+    [pic setProblemStlye:@"2"];
+    [pic setProblemStars:@"4"];
+    [pic setProblemTicked:@"TRUE"];
+    [problems addObject:pic];
